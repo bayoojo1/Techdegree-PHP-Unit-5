@@ -1,3 +1,5 @@
+@extends('nav')
+@extends('head')
 <main role="main" class="container">
         <div class="row mb-4">
             <div class="col-lg-4 mb-4">
@@ -78,3 +80,4 @@
             </div> 
         </div><!-- end row -->
     </main>
+    @extends('footer')
