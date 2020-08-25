@@ -1,3 +1,11 @@
+<?php 
+function active($currect_page){
+    $uri =  $_SERVER['REQUEST_URI']; 
+    if($currect_page == $uri){
+        echo 'active';
+    } 
+  }
+?>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="height: 70px !important">
         <div class="container">
         <a class="navbar-brand" href="/" style="border-right:2px; border-color: hotpink">
@@ -6,13 +14,13 @@
         </a>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active" style="color: hotpink;">
+                <li class="nav-item <?php active('/');?>" style="color: hotpink;">
                     <a class="nav-link" href="{{env('app_url')}}/"><b>Home</b></a>
                 </li>
-                <li class="nav-item" style="color: hotpink;">
+                <li class="nav-item <?php active('/cats');?>" style="color: hotpink;">
                     <a class="nav-link" href="{{env('app_url')}}/cats"><b>Cats</b></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item <?php active('/dogs');?>" style="color: hotpink;">
                     <a class="nav-link" href="{{env('app_url')}}/dogs"><b>Dogs</b></a>
                 </li>
 
