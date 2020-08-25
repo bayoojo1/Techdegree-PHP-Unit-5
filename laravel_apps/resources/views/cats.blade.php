@@ -1,6 +1,4 @@
-@extends('nav')
-@extends('head')
-<main role="main" class="container">
+@extends('layout')
         <div class="row mb-4">
             <div class="col-lg-4 mb-4">
                 <div class="card bg-dark">
@@ -78,6 +76,4 @@
                     </div>
                 </div>
             </div> 
-        </div><!-- end row -->
-    </main>
-    @extends('footer')
+        </div>
