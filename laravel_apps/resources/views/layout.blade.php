@@ -8,7 +8,7 @@
     @include('nav')
     <!-- START library.blade.php -->
     <main role="main" class="container">
-        <!-- @yield('body') -->
+        @yield('body')
     </main>
     <!-- END library.blade.php -->
     @include('footer')
